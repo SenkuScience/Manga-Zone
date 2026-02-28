@@ -1,0 +1,129 @@
+
+.playwrite-us-modern {
+  font-family: "Playwrite US Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body {background:url(image/image2.png) center/cover no-repeat ;
+min-height:100vh;
+    }
+.flexbox
+{
+height:300px;
+width: 100%;
+border:3px solid gold;
+padding: 0;
+background:url(image/image3.png) center/cover no-repeat ;
+display:flex;
+justify-content:space-around;
+        }
+  
+.flexbox li{
+    background:skyblue;
+  height: 60px;
+    list-style:none;
+   
+}
+.grid,
+.absolute{
+    height:400px;
+    width: 100%;
+    border:5px solid green;
+} 
+.grid-container{
+    display:grid;
+    grid-template-columns:40% 60%;
+    
+}
+img{
+    display:block;
+}
+ 
+ .grid img{
+    margin:20px auto;
+     display:block;
+ }
+ 
+form{
+     display: grid ;
+     grid-template-columns:1fr 1fr;
+     grid-template-rows:1fr 1fr 1fr ;
+     grid-template-areas:
+     "i1 i2"
+     "i3 i3"
+     "vi btn";  
+     
+ }
+ input{
+     margin:10px;
+     padding:5px;
+     border:2px solid purple;
+     font-family:Playwrite US Modern;
+     resize:none;
+ }
+ 
+#nom{
+    grid-area:i1;
+}
+#prenom{ 
+    grid-area:i2;
+}
+#age{
+    grid-area:i3;
+  
+}
+#button{
+    grid-area:btn;
+    background:#2beaff;
+    transition :5s;
+}
+#button:hover{
+    background:url(image/image4.png) center/cover no-repeat ;
+    color:white;
+}
+.absolute{
+    position: relative;
+} 
+#circle1{
+    background: turquoise ;
+    height: 80px;
+    width: 80px;
+    border-radius:150px;
+    position:absolute;
+    right:0;
+}
+#circle2{
+background: red;
+height: 80px;
+width: 80px;
+border-radius: 160px;
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+}
+
+@media screen and (max-width:600px){
+     .grid-container{
+        display:block;
+        margin: auto;
+    }
+      }
+      @media screen and (max-width: 610px){
+        .flexbox{
+            flex-direction:column;
+            align-items:center;
+        }
+        form{
+            grid-template-columns: 1fr;
+            grid-template-rows:repeat(4,1fr);
+            grid-template-areas:
+            "i1"
+            "i2"
+            "i3"
+            "vi"
+            "btn";
+        }
+      }
+
+    
