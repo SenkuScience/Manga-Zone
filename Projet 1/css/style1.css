@@ -1,0 +1,128 @@
+body {
+  background: black;
+}
+
+.jjk1 {
+  color: white;
+  width: 70%;
+  font-size: 60px;
+  font-family: bold;
+  margin-left: 80px;
+}
+.senku,
+.eminence {
+  color: white;
+  width: 70%;
+  font-size: 60px;
+  font-family: bold;
+  margin-left: 80px;
+  text-align: center;
+}
+.jjk1:hover {
+  transition: 5s;
+}
+#jjk2 {
+  height: 60px;
+  width: 30%;
+}
+
+#saison1,
+#saison2,
+#saison3 {
+  text-decoration: none;
+  width: 30%;
+  font-size: 45px;
+  border: solid 2px #118719;
+  text-align: center;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+#saison1:hover,
+#saison2:hover,
+#saison3:hover {
+  transform: translateX(100%);
+  transition: 5s;
+}
+
+a {
+  text-decoration: none;
+}
+.resume1,
+.resume2,
+.resume3 {
+  color: white;
+  border-radius: 10px;
+  border: solid 2px #1f6feb;
+  padding: 10px;
+}
+#cid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 50%;
+  text-decoration: none;
+  border-top: solid 3px white;
+  border-bottom: solid 3px white;
+}
+#cid li {
+  background: url(/css/Picture/image15.jpg) center/cover no-repeat;
+  width: 40%;
+  height: 220px;
+  margin:;
+  margin-top: 50px;
+  align-content: center;
+  text-decoration: none;
+  font-size: 45px;
+  border: double 5px #8c0e0e;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+#cid li:hover {
+  transform: translateX(50%);
+  transition: 3s;
+}
+#senku {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  text-decoration: none;
+  border-top: solid 3px white;
+  border-bottom: solid 3px white;
+}
+
+#senku li {
+  background: url(/css/Picture/image2.jpg) center/cover no-repeat;
+  width: 60%;
+  height: 180px;
+  text-decoration: none;
+
+  font-size: 50px;
+  border: double 5px #8c0e0e;
+  text-align: center;
+  border-radius: 20px;
+  align-content: center;
+  margin: 40px 40px 40px 40px;
+  list-style: none;
+}
+
+#senku li:hover {
+  height: 250px;
+  width: 80%;
+  transition: 3s;
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    background: red;
+  }
+  #cid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    background:;
+    text-decoration: none;
+    align-items: center;
+    width: 60%;
+  }
+}
